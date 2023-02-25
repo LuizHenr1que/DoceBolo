@@ -228,6 +228,16 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
 .introducao::before {
   content: '';
   width: 60px;
@@ -248,10 +258,10 @@ p {
 
 
 
-/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)
 @media (max-width: 575.98px) { 
   body {
-    /*border: 1px solid rgb(76, 0, 255);*/
+    /*border: 1px solid rgb(76, 0, 255);
   }
   body {
     gap: 30px;
@@ -294,7 +304,7 @@ p {
 
 }
 
-/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)
 @media (min-width: 576px) and (max-width: 767.98px) { 
   body {
     border: 1px solid rgb(251, 255, 0);
@@ -317,7 +327,7 @@ p {
   }
 }
 
-/* Dispositivos médios (tablets com 768px ou mais)*/
+/* Dispositivos médios (tablets com 768px ou mais)
 @media (min-width: 768px) and (max-width: 991.98px) { 
   body {
     border: 1px solid rgb(0, 255, 55);
@@ -331,7 +341,7 @@ p {
   }
 }
 
-/* Dispositivos large (desktops com 992px ou mais)*/
+/* Dispositivos large (desktops com 992px ou mais)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   body {
     border: 1px solid rgb(255, 0, 119);
@@ -344,11 +354,11 @@ p {
   }
 }
 
-/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)
 @media (min-width: 1200px) { 
   body {
     border: 1px solid rgb(0, 255, 255);
   }
   
 }
-
+*/
