@@ -164,16 +164,19 @@ p {
   box-sizing: border-box;
 }
 
-@media (max-width: 1000px) {
-  .conteudo-vantagem {
-    grid-template-columns: 1fr;
-  }
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) { 
   .subtitulo {
-    text-align: center;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 600px) {
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
   body {
     gap: 30px;
     margin-top: 20px;
@@ -192,15 +195,38 @@ p {
     display: none;
   }
   .subtitulo {
-    font-size: 3rem;
+    fon
+
+}
+
+/* Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  h1 {
+      font-size: 4em;
+  }
+  .rotacao {
+      padding-top: 100px;
+  }
+  .texto-ds2 {
+      width: 210px;
+  }
+  .texto-ds2 {
+      top: 80%;
+  } 
+}
+
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
   }
 }
 
-@media (max-width: 400px) {
-  .subtitulo {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1rem;
-  }
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) { 
+
 }
+
