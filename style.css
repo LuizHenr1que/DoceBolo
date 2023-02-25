@@ -230,6 +230,12 @@ p {
   p {
     font-size: 1rem;
   }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao::before {
+    display: none;
+  }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
