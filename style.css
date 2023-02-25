@@ -105,10 +105,10 @@ p {
   right: -30px;
 }
 
-.introducao-cover img {
+/*.introducao-cover img {
   object-fit: cover;
   height: 100%;
-}
+}*/
 
 .botao {
   background: #e21;
@@ -167,30 +167,6 @@ p {
 }
 
 /*configurando slide */
-.animais h2 {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  margin-bottom: 1rem;
-  color: #E54;
-}
-
-.animais h2::before {
-  content: '';
-  display: inline-block;
-  width: 40px;
-  height: 10px;
-  margin-right: 10px;
-  background: #FB5;
-}
-
-.animais p {
-  font-family: Helvetica, Arial;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
 .animais-lista {
   height: 370px;
   overflow-y: scroll;
@@ -241,7 +217,6 @@ p {
   img {
     max-width: 100%;
     display: block;
-    
   }
 }
 
