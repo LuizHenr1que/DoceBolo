@@ -199,6 +199,75 @@ p {
   margin-bottom: 3rem;
 }
 
+/***@@@@@******************INICIO fale conosco*******@@@@**********/
+.fale_conosco {
+  background: pink;
+}
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: medium;
+  width: 50vw;
+}
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+}
+
+.form label {
+  color: black;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.1em;
+  margin-bottom: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.form textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {  
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 0 3px pink;
+}
+
+.form button {
+  display: block;
+  padding: 0.3rem;
+  background: black;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.form button:hover,
+.form button:focus {
+  outline: none;
+  background: pink;
+}
+.fale_conosco_mapa {
+  padding: 15px;
+  width: 40%;
+  height: 30%;
+}
+
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) { 
