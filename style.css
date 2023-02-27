@@ -201,7 +201,7 @@ p {
 
 /***@@@@@******************INICIO fale conosco*******@@@@**********/
 .fale_conosco {
-  background: pink;
+  background: url(img/background-quem-somos.png) no-repeat;
 }
 form {
   display: flex;
