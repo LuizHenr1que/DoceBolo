@@ -219,8 +219,10 @@ p {
   margin-bottom: 2rem;
 }
 
+
 .conteudo-sobre p {
   color: var(--gray-p-contatos);
+  
 }
 .conteudo-sobre_img_valor{
   margin: auto;
@@ -232,7 +234,9 @@ p {
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
-
+}
+.conteudo-sobre h1{
+  font-size: 3rem;
 }
 
 /***@@@@@******************INICIO fale conosco*******@@@@**********/
@@ -307,8 +311,11 @@ form {
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) { 
-  .subtitulo {
-    font-size: 2rem;
+  .subtitulo{
+    font-size: 3rem;
+  }
+  .introducao::before{
+    display: none;
   }
   p {
     font-size: 1rem;
@@ -316,8 +323,12 @@ form {
   .conteudo {
     grid-template-columns: 1fr;
   }
-  .introducao::before {
-    display: none;
+  .conteudo-sobre h3{
+    font-size: 2rem;
+  }
+
+  .introducao h1{
+    font-size: 2.6rem;
   }
   img {
     max-width: 100%;
@@ -327,6 +338,10 @@ form {
     width: 300px;
     height: 200px;
     border-radius: 2rem;
+    margin: auto;
+  }
+  .bolos-lista {
+    width: 90%;
     margin: auto;
   }
 }
