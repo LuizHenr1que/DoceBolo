@@ -52,7 +52,7 @@ h3 {
 p {
   font-size: 1.2rem;
   line-height: 1.5rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1, h2, h3 {
   font-family: var(--font-h1);
@@ -86,10 +86,9 @@ h1, h2, h3 {
 .menu a {
   display: block;
   background: var(--white);
-  padding: 1rem 2rem;
+  padding: 10px 15px;
   border-radius: 1rem;
   color: #000000;
-  text-transform: uppercase;
   border: 2px solid #fff;
 }
 
@@ -340,7 +339,7 @@ form {
     grid-template-columns: 1fr;
   }
   .conteudo-sobre h3{
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .introducao h1{
@@ -360,6 +359,18 @@ form {
     width: 90%;
     margin: auto;
   }
+  .header {
+    gap: 1rem; 
+  }
+  .menu a {
+    display: block;
+    background: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+  }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
@@ -371,6 +382,7 @@ form {
   .header {
     gap: 30px;
   }
+  
   .conteudo {
     grid-template-columns: 1fr;
   }
