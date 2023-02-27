@@ -208,7 +208,7 @@ form {
   align-items: center;
   flex-direction: column;
   font-size: medium;
-  width: 50vw;
+  margin: auto;
 }
 .form label,
 .form input,
@@ -264,8 +264,8 @@ form {
 }
 .fale_conosco_mapa {
   padding: 15px;
-  width: 40%;
-  height: 30%;
+  width: 300px;
+  height: 200px;
 }
 
 
@@ -286,6 +286,12 @@ form {
   img {
     max-width: 100%;
     display: block;
+  }
+  .fale_conosco_mapa {
+    width: 300px;
+    height: 200px;
+    border-radius: 2rem;
+    margin: auto;
   }
 }
 
