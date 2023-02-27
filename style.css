@@ -216,16 +216,22 @@ p {
 /* section contatos */
 .conteudo-sobre {
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 .conteudo-sobre p {
   color: var(--gray-p-contatos);
 }
-
-.rotacionar {
- 
+.conteudo-sobre_img_valor{
+  margin: auto;
 }
-.conteudo-sobre_img_valor {
+.conteudo-sobre_img_valor p{
+  position: relative;
+  bottom: 7.6rem;
+  font-size: medium;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
 
 }
 
