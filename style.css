@@ -10,6 +10,7 @@
   --white-vantagens: #f7f7f7;
   --white-slide: #faf6ed;
   --gray-p-contatos: #7a7676fb;
+  --black : #000000;
 }
 
 body {
@@ -270,7 +271,7 @@ form {
 }
 
 .form label {
-  color: black;
+  color: var(--black);
 }
 
 .form input,
@@ -292,14 +293,14 @@ form {
 .form textarea:hover,
 .form textarea:focus {  
   outline: none;
-  border-color: black;
-  box-shadow: 0 0 0 3px pink;
+  border-color: var(--black);
+  box-shadow: 0 0 0 3px var(--pink4);
 }
 
 .form button {
   display: block;
   padding: 0.3rem;
-  background: black;
+  background: var(--pink2);
   color: #fff;
   font: inherit;
   text-transform: uppercase;
@@ -312,7 +313,7 @@ form {
 .form button:hover,
 .form button:focus {
   outline: none;
-  background: pink;
+  background: var(--pink1);
 }
 .fale_conosco_mapa {
   padding: 15px;
@@ -396,7 +397,6 @@ form {
   } 
   .bolos-lista {
     grid-column: 1;
-    border: 1px solid rgb(255, 0, 149);
   }
 } 
 
