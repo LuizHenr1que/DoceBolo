@@ -21,7 +21,7 @@ body {
   justify-items: center;
   margin-top: 3.75rem;
   background-color:var(--white);
-  background: url(img/background-quem-somos.png) no-repeat;
+  background: url(../img/background-quem-somos.png) no-repeat;
 }
 
 img {
@@ -253,7 +253,7 @@ h1, h2, h3 {
 
 /***@@@@@******************INICIO fale conosco*******@@@@**********/
 .fale_conosco {
-  background: url(img/background-quem-somos.png) no-repeat;
+  background: url(../img/background-quem-somos.png) no-repeat;
   padding: 30px 0px 30px 0px ;
 }
 form {
