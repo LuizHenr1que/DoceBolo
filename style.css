@@ -5,6 +5,7 @@
   --pink3:#8C0303;
   --pink4: #D9ADAD;
   --white: #fff;
+  --gray-vantagens: #f7f7f7;
 }
 
 body {
@@ -71,7 +72,7 @@ p {
 
 .menu a {
   display: block;
-  background: #ffffff;
+  background: var(--white);
   padding: 1rem 2rem;
   border-radius: 1rem;
   color: #000000;
@@ -90,12 +91,12 @@ p {
 }
 
 .introducao {
-  background: #fff;
-  padding: 40px;
+  background: var(--white);
+  padding: 2.5rem;
   text-align: right;
   position: relative;
   display: grid;
-  gap: 20px;
+  gap: 1.25rem;
   align-content: center;
   justify-items: end;
 }
@@ -108,27 +109,22 @@ p {
   content: "";
   width: 60px;
   height: 4px;
-  background: #e21;
+  background: var(--pink2);
   position: absolute;
   top: 30px;
   right: -30px;
 }
 
-/*.introducao-cover img {
-  object-fit: cover;
-  height: 100%;
-}*/
-
 .botao {
-  background: #e21;
-  color: #fff;
+  background: var(--pink2);
+  color: var(--white);
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
 .botao:hover {
-  background: #900;
+  background: var(--pink);
 }
 
 .subtitulo {
@@ -136,27 +132,34 @@ p {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
-  padding: 40px;
+  padding: 2.5rem;
   align-self: center;
   background-image: url("./img/onda.svg");
-  /* word-break: break-all; */
+}
+
+.subtitulo::before {
+  content: "";
+  width: 8rem;
+  height: 4px;
+  background: var(--pink2);
+  position: absolute;
 }
 
 .vantagens {
-  background: #fff;
-  padding: 40px;
+  background: var(--white);
+  padding: 2.5rem;
 }
 
 .vantagens-item {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
-  padding: 20px;
+  padding: 1.25rem;
   border-left: 4px solid transparent;
 }
 
 .vantagens-item:nth-child(odd) {
-  background: #f7f7f7;
+  background: var(--gray-vantagens);
 }
 
 .vantagens-item:hover {
