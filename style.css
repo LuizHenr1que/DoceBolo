@@ -1,5 +1,5 @@
 :root{
-  -pink: #A6535A;
+  --pink: #A6535A;
   --pink1:#591E29;
   --pink2:#D98B99;
   --pink3:#8C0303;
@@ -65,7 +65,7 @@ p {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
 }
 
@@ -80,13 +80,13 @@ p {
 }
 
 .menu a:hover {
-  border-color: #e21;
+  border-color: var(--pink4);
 }
 
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1000px;
+  max-width: 62.5rem;
 }
 
 .introducao {
