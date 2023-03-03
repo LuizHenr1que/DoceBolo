@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+  --font-h1: 'Noto Serif', serif;
+  --pink: #A6535A;
+  --pink1:#591E29;
+  --pink2:#D98B99;
+  --pink3:#8C0303;
+  --pink4: #D9ADAD;
+  --white: #fff;
+  --white-vantagens: #f7f7f7;
+  --white-slide: #faf6ed;
+  --gray-p-contatos: #7a7676fb;
+  --black : #000000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+  margin-top: 3.75rem;
+  background-color:var(--white);
+  background: url(../img/background-quem-somos.png) no-repeat;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--font-h1);
+  font-weight: 500;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+  font-family: var(--font-h1);
+
+}
+
+.header {
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+}
+
+.logo span{
+  color: var(--pink1);
+  font-weight: normal;
+  font-family: var(--font-h1);
+}
+.header .logo{
+  color: var(--pink2);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.menu a {
+  display: block;
+  background: var(--white);
+  padding: 10px 15px;
+  border-radius: 1rem;
+  color: #000000;
+  border: 2px solid #fff;
+}
+
+.menu a:hover {
+  border-color: var(--pink4);
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*configurando cardapio*/
+.titulo-conteudo {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.kit {
+
+    margin: auto;
+    margin-bottom: 2rem;
+  
+}
+
+
+
+
+
+
+
+
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) { 
+  .subtitulo{
+    font-size: 3rem;
+  }
+  .introducao::before{
+    display: none;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .conteudo-sobre h3{
+    font-size: 1rem;
+  }
+
+  .introducao h1{
+    font-size: 2.6rem;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .fale_conosco_mapa {
+    width: 300px;
+    height: 200px;
+    border-radius: 2rem;
+    margin: auto;
+  }
+  .bolos-lista {
+    width: 90%;
+    margin: auto;
+  }
+  .header {
+    gap: 1rem; 
+  }
+  .menu a {
+    display: block;
+    background: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+  }
+}
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .header {
+    gap: 30px;
+  }
+  
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao::before {
+    display: none;
+  }
+
+}
+
+/* Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  h1 {
+      font-size: 4em;
+  }
+  .rotacao {
+      padding-top: 100px;
+  }
+  .texto-ds2 {
+      width: 210px;
+  }
+  .texto-ds2 {
+      top: 80%;
+  } 
+  .bolos-lista {
+    grid-column: 1;
+  }
+} 
+
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) { 
+
+}
+
