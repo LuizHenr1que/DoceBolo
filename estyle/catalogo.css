@@ -251,6 +251,12 @@ h1, h2, h3 {
     text-transform: uppercase;
     border: 2px solid #fff;
   }
+  .kit-festa {
+    display: grid;
+    grid-template-columns: 1fr ;
+    max-width: 62.5rem;
+    margin: auto;
+  }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/

@@ -1,4 +1,3 @@
-
 var proximaImagem = 1;//guarda a posição da imagem que deve entrar na tela, no caso é a imagem da posição 1, pois a imagem 0 já está visível na tela
 var zIndexAtual = 0;//usado para criar um aumento progressivo no z-index
 var imagens = document.getElementById("slide-bolo").children;//pega todos os nodos filhos da div #container, ou seja, nossa coleção de imagens
