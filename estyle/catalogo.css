@@ -259,6 +259,43 @@ h1, h2, h3 {
   }
 }
 
+
+
+
+
+/*configurando slide */
+.bolos-lista {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.bolos-lista li {
+  cursor: pointer;
+}
+
+.bolos-lista::-webkit-scrollbar {
+  width: 18px;
+}
+
+.bolos-lista::-webkit-scrollbar-thumb {
+  background: var(--pink2);
+  border-left: 4px solid var(--white-slide);
+  border-right: 4px solid var(--white-slide);
+}
+
+.bolos-lista::-webkit-scrollbar-track {
+  background: var(--white-slide);
+}
+
+.bolos-descricao {
+  grid-column: 3;
+}
+
+.bolos-descricao section {
+  margin-bottom: 3rem;
+}
+
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
   body {
