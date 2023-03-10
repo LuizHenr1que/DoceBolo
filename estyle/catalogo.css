@@ -116,15 +116,17 @@ h1, h2, h3 {
   color: rgba(0, 0, 0, 0.2);
   text-align: left;
   align-self: center;
+  margin: auto;
 }
 
 .recheios {
   border: 5px dotted var(--pink2);
-  width: 300px;
+  width: 200px;
   height: 200px;
   text-align: center;
   align-content: center;
   padding: 10px;
+  margin: auto;
 }
 
 .kit{
@@ -144,37 +146,15 @@ h1, h2, h3 {
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) { 
   .titulo{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-top: -50px;
   }
-  .introducao::before{
-    display: none;
-  }
+  
   p {
     font-size: 1rem;
   }
   .conteudo {
     grid-template-columns: 1fr;
-  }
-  .conteudo-sobre h3{
-    font-size: 1rem;
-  }
-
-  .introducao h1{
-    font-size: 2.6rem;
-  }
-  img {
-    max-width: 100%;
-    display: block;
-  }
-  .fale_conosco_mapa {
-    width: 300px;
-    height: 200px;
-    border-radius: 2rem;
-    margin: auto;
-  }
-  .bolos-lista {
-    width: 90%;
-    margin: auto;
   }
   .header {
     gap: 1rem; 
@@ -187,12 +167,6 @@ h1, h2, h3 {
     color: #000000;
     text-transform: uppercase;
     border: 2px solid #fff;
-  }
-  .kit-festa {
-    display: grid;
-    grid-template-columns: 1fr ;
-    max-width: 62.5rem;
-    margin: auto;
   }
 }
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
@@ -220,36 +194,14 @@ h1, h2, h3 {
 
 /* Dispositivos médios (tablets com 768px ou mais)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-  h1 {
-      font-size: 4em;
-  }
-  .rotacao {
-      padding-top: 100px;
-  }
-  .texto-ds2 {
-      width: 210px;
-  }
-  .texto-ds2 {
-      top: 80%;
-  } 
-  .bolos-lista {
-    grid-column: 1;
-  }
+
 } 
 
 /* Dispositivos large (desktops com 992px ou mais)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-  .conteudo-vantagem {
-    grid-template-columns: 1fr;
-  }
-  .titulo {
-    text-align: center;
-  }
+
 }
 
 /* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
 @media (min-width: 1200px) { 
-  .conteudo-vantagem {
-    grid-template-columns: 1fr;
-  }
 }
