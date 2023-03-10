@@ -109,96 +109,39 @@ h1, h2, h3 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*configurando Catálogo*/
-.titulo-conteudo {
-  grid-column: 1 / -1;
-  text-align: center;
-}
-
-.titulo-conteudo h1{
-  padding-bottom: 2rem;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 100;
-}
-
-
-.kit-festa {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 62.5rem;
-  margin: auto;
-}
-
-.kit-festa h1{
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 100;
-  text-align: center;
-}
-
-
-
-.kit-festa div{
-  border-top: 8px dashed;
-  padding: 3rem;
-  border-image: url("../img/onda.svg") 150 round;
-  width: 400px;
-}
-
-.kit-festa span {
-  color: green;
-  font-size: 1.4rem;
-}
-
-.kit-festa h3 {
-  font-size: 4rem;
+.titulo {
+  font-size: 3rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: left;
-  padding: 2.5rem;
   align-self: center;
-  background-image: url("./img/onda.svg");
+  padding-bottom: 50px;
 }
 
-.kit-festa h3::before {
+.recheios {
+  border: 5px dotted var(--pink2);
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+}
+
+.kit {
+  padding-bottom: 4rem;
+}
+
+.foto-kit1::before {
   content: "";
-  width: 8rem;
-  height: 4px;
+  width: 3px;
+  height: 10rem;
   background: var(--pink2);
   position: absolute;
 }
 
-
-
-
+.conteudo-kit{
+  padding: 13px;
+}
 
 
 
@@ -206,7 +149,7 @@ h1, h2, h3 {
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) { 
-  .subtitulo{
+  .titulo{
     font-size: 3rem;
   }
   .introducao::before{
@@ -258,44 +201,6 @@ h1, h2, h3 {
     margin: auto;
   }
 }
-
-
-
-
-
-/*configurando slide */
-.bolos-lista {
-  height: 370px;
-  overflow-y: scroll;
-  grid-column: 2;
-}
-
-.bolos-lista li {
-  cursor: pointer;
-}
-
-.bolos-lista::-webkit-scrollbar {
-  width: 18px;
-}
-
-.bolos-lista::-webkit-scrollbar-thumb {
-  background: var(--pink2);
-  border-left: 4px solid var(--white-slide);
-  border-right: 4px solid var(--white-slide);
-}
-
-.bolos-lista::-webkit-scrollbar-track {
-  background: var(--white-slide);
-}
-
-.bolos-descricao {
-  grid-column: 3;
-}
-
-.bolos-descricao section {
-  margin-bottom: 3rem;
-}
-
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
   body {
@@ -343,7 +248,7 @@ h1, h2, h3 {
   .conteudo-vantagem {
     grid-template-columns: 1fr;
   }
-  .subtitulo {
+  .titulo {
     text-align: center;
   }
 }
@@ -352,4 +257,3 @@ h1, h2, h3 {
 @media (min-width: 1200px) { 
 
 }
-
