@@ -100,22 +100,22 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 62.5rem;
+  
 }
 
 .conteudo img {
   margin: auto;
   width : 200px;
-  border-radius: 100%; 
+  border-radius: 100%;
 }
 
 
 .titulo {
-  font-size: 3rem;
+  font-size: 3.3rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: left;
   align-self: center;
-  padding-bottom: 50px;
 }
 
 .recheios {
@@ -123,25 +123,19 @@ h1, h2, h3 {
   width: 300px;
   height: 200px;
   text-align: center;
+  align-content: center;
   padding: 10px;
-  margin: 30px;
 }
 
-.kit {
-  padding-bottom: 4rem;
+.kit{
+  border: 5px dotted var(--pink2);
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem; 
 }
 
-.foto-kit1::before {
-  content: "";
-  width: 3px;
-  height: 10rem;
-  background: var(--pink2);
-  position: absolute;
-}
-
-.conteudo-kit{
-  padding: 13px;
-}
 
 
 
@@ -255,5 +249,7 @@ h1, h2, h3 {
 
 /* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
 @media (min-width: 1200px) { 
-
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
 }
