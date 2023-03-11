@@ -107,6 +107,7 @@ h1, h2, h3 {
   margin: auto;
   width : 200px;
   height: 300px;
+  border-radius: 1rem;
 }
 
 
