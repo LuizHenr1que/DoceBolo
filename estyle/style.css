@@ -216,6 +216,10 @@ h1, h2, h3 {
   border-radius: 10px;
 }
 
+.ativa{
+  margin-left:0%;
+}
+
 
 /* section contatos */
 .conteudo-sobre {
