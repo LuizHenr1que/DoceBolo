@@ -100,17 +100,21 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 62.5rem;
-  
 }
 
-.conteudo img {
+.conteudo img,
+.kit img {
   margin: auto;
   width : 200px;
   height: 300px;
   border-radius: 1rem;
 }
 
-
+.conteudo-kit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 62.5rem;
+}
 .titulo {
   font-size: 3.3rem;
   text-transform: uppercase;
@@ -130,12 +134,10 @@ h1, h2, h3 {
   margin: auto;
 }
 
-.kit{
+.kit {
   border: 5px dotted var(--pink2);
-  width: auto;
-  height: auto;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem; 
 }
 
@@ -154,7 +156,8 @@ h1, h2, h3 {
   p {
     font-size: 1rem;
   }
-  .conteudo {
+  .conteudo,
+  .conteudo-kit{
     grid-template-columns: 1fr;
   }
   .header {
@@ -180,7 +183,8 @@ h1, h2, h3 {
     gap: 30px;
   }
   
-  .conteudo {
+  .conteudo,
+  .conteudo-kit {
     grid-template-columns: 1fr;
   }
   .introducao {
@@ -195,7 +199,9 @@ h1, h2, h3 {
 
 /* Dispositivos médios (tablets com 768px ou mais)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-
+  .conteudo-kit {
+    grid-template-columns: 1fr 1fr;
+  }
 } 
 
 /* Dispositivos large (desktops com 992px ou mais)*/
