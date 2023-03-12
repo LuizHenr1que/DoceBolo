@@ -6,6 +6,7 @@
   --pink2:#D98B99;
   --pink3:#8C0303;
   --pink4: #D9ADAD;
+  --pink5: #d9adad4d;
   --white: #fff;
   --white-vantagens: #f7f7f7;
   --white-slide: #faf6ed;
@@ -92,36 +93,67 @@ h1, h2, h3 {
   border: 2px solid #fff;
 }
 
+
+main {
+  background-color: var(--pink5);
+}
+
 .menu a:hover {
   border-color: var(--pink4);
 }
 
-.conteudo {
+.conteudo-titulo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 62.5rem;
 }
 
-.conteudo img,
-.kit img {
+.conteudo-titulo img,
+.kit img{
   margin: auto;
-  width : 200px;
-  height: 300px;
+  width : 150px;
+  height: 250px;
   border-radius: 1rem;
 }
 
-.conteudo-kit {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 62.5rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .titulo {
   font-size: 3.3rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
-  text-align: left;
+  text-align: center;
   align-self: center;
-  margin: auto;
 }
 
 .recheios {
@@ -132,14 +164,104 @@ h1, h2, h3 {
   align-content: center;
   padding: 10px;
   margin: auto;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bolo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width : 200px;
+  height: 400px;
+  text-align: center;
+  align-items: center; 
+  border-radius: 1rem;
+  background-color: var(--pink5);
+  transition: all 0.2s;
+}
+
+.bolo img {
+  width : 150px;
+  height: 250px;
+}
+
+.bolo img:hover,
+.conteudo-kit img:hover {
+  opacity: 0.90;
+  transform:scale(1.3);
+  transition: all 0.5s;
+  padding-bottom: 1rem;
+}
+
+
+.conteudo-bolo {
+  max-width: 62.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.botao {
+  background: var(--pink2);
+  color: var(--white);
+  border: solid 1px var(--pink1);
+  padding: 2px 30px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.botao:hover {
+  background: var(--white);
+  color: var(--pink1);
+}
+
+
+
+
+
+
+
+
+
+
+.conteudo-kit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 62.5rem;
+  border: 5px dotted var(--pink2);
+  background-color: var(pink5);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 5px;
 }
 
 .kit {
-  border: 5px dotted var(--pink2);
-  text-align: center;
   padding: 1rem;
-  margin: 2rem; 
 }
+
 
 
 
@@ -156,7 +278,7 @@ h1, h2, h3 {
   p {
     font-size: 1rem;
   }
-  .conteudo,
+  .conteudo-titulo,
   .conteudo-kit{
     grid-template-columns: 1fr;
   }
@@ -183,7 +305,7 @@ h1, h2, h3 {
     gap: 30px;
   }
   
-  .conteudo,
+  .conteudo-titulo,
   .conteudo-kit {
     grid-template-columns: 1fr;
   }
