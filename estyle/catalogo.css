@@ -8,11 +8,9 @@
   --pink4: #D9ADAD;
   --pink5: #d9adad4d;
   --white: #fff;
-  --white-vantagens: #f7f7f7;
-  --white-slide: #faf6ed;
-  --gray-p-contatos: #7a7676fb;
   --black : #000000;
 }
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -48,22 +46,20 @@ h1,
 h2,
 h3 {
   margin: 0px;
+  
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1, h2, h3 {
-  font-family: var(--font-h1);
-
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .header {
   display: grid;
   gap: 3.75rem;
   justify-items: center;
+  font-family: var(--font-h1);
 }
 
 .logo span{
@@ -89,7 +85,7 @@ h1, h2, h3 {
   background: var(--white);
   padding: 10px 15px;
   border-radius: 1rem;
-  color: #000000;
+  color: var(--black);
   border: 2px solid #fff;
 }
 
@@ -160,7 +156,7 @@ main {
 .bolo img:hover,
 .kit img:hover {
   opacity: 0.90;
-  transform:scale(1.3);
+  transform:scale(1.2);
   transition: all 0.5s;
   padding-bottom: 1rem;
 }
@@ -198,12 +194,9 @@ main {
   background-color: var(pink5);
   border-radius: 1rem;
   text-align: center;
-}
-
-.conteudo-kit {
   border: 5px dotted var(--pink4);
   border-radius: 1rem;
- padding: 2rem;
+  padding: 2rem;
 }
 
 .kit {
@@ -217,10 +210,6 @@ main {
   border-radius: 1rem;
   transition: all 0.2s;
 }
-
-
-
-
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) { 
