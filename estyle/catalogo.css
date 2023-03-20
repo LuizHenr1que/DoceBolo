@@ -167,8 +167,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 1rem;
-  margin: 1rem;
+  gap: ;
+  margin: ;
 }
 
 .botao {
@@ -224,6 +224,9 @@ main {
   .conteudo-titulo,
   .conteudo-kit{
     grid-template-columns: 1fr;
+  }
+  .conteudo-bolo {
+    grid-template-columns: 1fr  1fr;
   }
   .header {
     gap: 1rem; 
