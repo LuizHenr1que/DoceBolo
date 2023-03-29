@@ -208,7 +208,7 @@ main {
     background-color: var(--pink5);
     transition: all 0.2s;
   
-    width: 160px;
+    width: 100px;
   }
   .header {
     gap: 1rem; 
