@@ -141,7 +141,8 @@ main {
   background-color: var(--pink5);
   transition: all 0.2s;
 
-  width: 300px;
+  width: 200px;
+  height: 350px;
 }
 
 
@@ -179,6 +180,8 @@ main {
   border-radius: 10px;
   transition: all 0.2s;
   margin: 10px;
+  width: auto;
+  align-items: center;
 }
 
 .botao:hover {
@@ -209,6 +212,7 @@ main {
     transition: all 0.2s;
   
     width: 130px;
+    height: ;
   }
   .header {
     gap: 1rem; 
@@ -233,10 +237,7 @@ main {
   .header {
     gap: 30px;
   }
-  .conteudo-titulo,
-  .conteudo-kit{
-    grid-template-columns: 1fr;
-  }
+
 
 
 }
