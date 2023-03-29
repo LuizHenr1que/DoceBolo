@@ -181,7 +181,10 @@ main {
   transition: all 0.2s;
   margin: 10px;
   width: auto;
-  align-items: center;
+}
+
+.botao a {
+  font-size: 4rem;
 }
 
 .botao:hover {
