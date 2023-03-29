@@ -7,7 +7,7 @@
   --pink3:#8C0303;
   --pink4: #D9ADAD;
   --white: #fff;
-  --white-vantagens: #f7f7f7;
+  --white-promocao: #f7f7f7;
   --white-slide: #faf6ed;
   --gray-p-contatos: #7a7676fb;
   --black : #000000;
@@ -160,12 +160,12 @@ h1, h2, h3 {
   position: absolute;
 }
 
-.vantagens {
+.promocao {
   background: var(--white);
   padding: 2.5rem;
 }
 
-.vantagens-item {
+.promocao-item {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
@@ -173,15 +173,15 @@ h1, h2, h3 {
   border-left: 4px solid transparent;
 }
 
-.vantagens-item:nth-child(odd) {
-  background: var(--white-vantagens);
+.promocao-item:nth-child(odd) {
+  background: var(--white-promocao);
 }
 
-.vantagens-item:hover {
+.promocao-item:hover {
   border-color: var(--pink2);
 }
 
-.vantagens-item p {
+.promocao-item p {
   grid-column: 2;
 }
 
