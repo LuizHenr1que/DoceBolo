@@ -49,11 +49,7 @@ h3 {
   
 }
 
-p {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
 
 .header {
   display: grid;
@@ -99,9 +95,7 @@ main {
 }
 
 .conteudo-titulo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 62.5rem;
+  padding: 10px;
 }
 
 .conteudo-titulo img{
@@ -128,29 +122,33 @@ main {
   text-align: center;
   align-content: center;
   padding: 10px;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
+  
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
 }
 
 
-.bolo {
+.bolo,
+.kit {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  width : 200px;
-  height: 400px;
   text-align: center;
   align-items: center; 
   border-radius: 1rem;
   background-color: var(--pink5);
   transition: all 0.2s;
+
+  width: 300px;
 }
 
 
 .bolo img,
 .kit img {
-  width : 150px;
-  height: 250px;
+  width : 120px;
+  height: 200px;
 }
 
 .bolo img:hover,
@@ -162,13 +160,15 @@ main {
 }
 
 
-.conteudo-bolo {
+.conteudo-bolo,
+.conteudo-kit,
+.conteudo-titulo {
   max-width: 62.5rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   gap: 1rem;
-  margin: 1rem;
 }
 
 .botao {
@@ -178,7 +178,7 @@ main {
   padding: 2px 30px;
   border-radius: 10px;
   transition: all 0.2s;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .botao:hover {
@@ -187,28 +187,9 @@ main {
 }
 
 .conteudo-kit {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 62.5rem;
-  border: 5px dotted var(--pink2);
-  background-color: var(pink5);
-  border-radius: 1rem;
-  text-align: center;
   border: 5px dotted var(--pink4);
   border-radius: 1rem;
-  padding: 2rem;
-}
-
-.kit {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width : 200px;
-  height: 400px;
-  text-align: center;
-  align-items: center; 
-  border-radius: 1rem;
-  transition: all 0.2s;
+  
 }
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
@@ -217,13 +198,17 @@ main {
     font-size: 2.5rem;
     margin-top: -50px;
   }
+  .bolo,
+  .kit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+    border-radius: 1rem;
+    background-color: var(--pink5);
+    transition: all 0.2s;
   
-  p {
-    font-size: 1rem;
-  }
-  .conteudo-titulo,
-  .conteudo-kit{
-    grid-template-columns: 1fr;
+    width: 160px;
   }
   .header {
     gap: 1rem; 
@@ -237,6 +222,7 @@ main {
     text-transform: uppercase;
     border: 2px solid #fff;
   }
+ 
 }
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -251,13 +237,13 @@ main {
   .conteudo-kit{
     grid-template-columns: 1fr;
   }
-  
+
 
 }
 
 /* Dispositivos médios (tablets com 768px ou mais)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-
+ 
 } 
 
 /* Dispositivos large (desktops com 992px ou mais)*/
