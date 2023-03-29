@@ -166,6 +166,12 @@ main {
   padding-bottom: 1rem;
 }
 
+.kit {
+  width: auto;
+  height: 400px;
+  margin: 10px;
+}
+
 
 .conteudo-bolo,
 .conteudo-kit,
