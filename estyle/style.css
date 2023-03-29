@@ -251,70 +251,12 @@ h1, h2, h3 {
 /***@@@@@******************INICIO fale conosco*******@@@@**********/
 .fale_conosco {
   background: url(../img/background-quem-somos.png) no-repeat;
-  padding: 30px 0px 30px 0px ;
-}
-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-size: medium;
-  margin: auto;
-}
-.form label,
-.form input,
-.form textarea,
-.form button {
-  display: block;
-}
-
-.form label {
-  color: var(--black);
-}
-
-.form input,
-.form textarea {
-  font: inherit;
-  padding: 0.1em;
-  margin-bottom: 0.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.form textarea {
-  min-height: 5rem;
-  resize: vertical;
-}
-
-.form input:hover,
-.form input:focus,
-.form textarea:hover,
-.form textarea:focus {  
-  outline: none;
-  border-color: var(--black);
-  box-shadow: 0 0 0 3px var(--pink4);
-}
-
-.form button {
-  display: block;
-  padding: 0.3rem;
-  background: var(--pink2);
-  color: #fff;
-  font: inherit;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.form button:hover,
-.form button:focus {
-  outline: none;
-  background: var(--pink1);
+  padding: 30px 0px 30px 0px ; 
+  grid-template-columns: 1fr;
 }
 .fale_conosco_mapa {
   padding: 15px;
-  width: 300px;
+  width: 500px;
   height: 200px;
   margin: auto;
   border-radius: 2rem;
@@ -347,7 +289,7 @@ form {
     display: block;
   }
   .fale_conosco_mapa {
-    width: 300px;
+    width: 350px;
     height: 200px;
     border-radius: 2rem;
     margin: auto;
